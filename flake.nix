@@ -9,7 +9,7 @@
       nixlib.url = "github:divnix/nixpkgs.lib";
       nixos-generators.url = "github:nix-community/nixos-generators";
       # We only use the nixosModules output which only needs nixpkgs lib
-      nixos-generators.inputs.nixpkgs.follows = "nixlib";
+      nixos-generators.inputs.nixlib.follows = "nixlib";
 
       # Only used for development
       nixpkgs.url = "github:nixos/nixpkgs";
