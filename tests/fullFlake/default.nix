@@ -48,7 +48,7 @@ let
         imports = [ (lib.importers.modules ./modules) ];
         externalModules = [
           { lib.our = self.lib; }
-          ./modules/customBuilds.nix # avoid exporting
+          ./customBuilds.nix # avoid exporting
         ];
       };
 
