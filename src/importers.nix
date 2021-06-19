@@ -184,7 +184,7 @@ in
     let isPath = builtins.isPath item || builtins.isString item; in
     if isPath && lib.hasSuffix ".toml" item then
       devshell.lib.importTOML item
-    else if isPath && lib.hasSuffix ".nix" then
+    else if isPath && lib.hasSuffix ".nix" item then
       import item
     else item;
 
